@@ -148,14 +148,16 @@ originals es conserven al catàleg, sense assumir-ne cap llicència.
 
 La pestanya **Background Music** recull música de fons amb el mateix format:
 reproductor, cerca, tags, autoria original i descàrrega en MP3. Inclou
-**Lofi Vinyl Teapot** d'ornave (identificador original 553356, 3:37). Iniciar
-una pista atura la que estigui sonant i canviar de pestanya atura la
+**Lofi Vinyl Teapot** d'ornave (identificador original 553356, 3:37) i
+**Lofi** de sub_clair (identificador original 586095, 3:34), amb introducció
+suau, un descans tranquil entre 1:44 i 2:09 i un final que s'esvaeix a 3:29.
+Iniciar una pista atura la que estigui sonant i canviar de pestanya atura la
 reproducció. Els fitxers són a `resources/background-music/` i el catàleg a
 `resources/background-music.ts`, també sense assumir-ne cap llicència.
 
 Genera la pàgina estàtica amb `npm run resources:build` i obre
-`resources/dist/index.html` directament al navegador. Els set efectes i la pista
-de música queden incrustats dins l'HTML (uns 11 MB) i es poden escoltar sense
+`resources/dist/index.html` directament al navegador. Els set efectes i les dues
+pistes de música queden incrustats dins l'HTML (uns 21 MB) i es poden escoltar sense
 servidor ni connexió.
 
 La pestanya Templates mostra les categories, descripcions i tags de

@@ -13,10 +13,10 @@ export const soundEffects = {
 
 export type SoundEffect = keyof typeof soundEffects;
 
-// The narration peaks at -17.8 dBFS with loud speech around -30.7 dBFS (10 ms windows);
+// The narration peaks at -14.2 dBFS with loud speech around -28.6 dBFS (10 ms windows);
 // effects are levelled to that speech loudness and never peak above the voice.
-const TARGET_LOUDEST_DB = -30;
-const PEAK_CEILING_DB = -18;
+const TARGET_LOUDEST_DB = -28;
+const PEAK_CEILING_DB = -14.5;
 
 export const effectVolume = (name: SoundEffect) => {
   const { peakDb, loudestDb } = soundEffects[name];
@@ -25,15 +25,15 @@ export const effectVolume = (name: SoundEffect) => {
 
 /** Scene cuts with their sweep and sound; nextVoice is the measured voice onset after the cut. */
 export const transitions: ReadonlyArray<{ scene: SceneName; sfx: SoundEffect; nextVoice: number | null }> = [
-  { scene: 'voices', sfx: 'shutter-click-02', nextVoice: 13.81 },
-  { scene: 'question', sfx: 'shutter-click-04', nextVoice: 30.95 },
-  { scene: 'tetera', sfx: 'analog-camera-shutter', nextVoice: 40.24 },
-  { scene: 'newton', sfx: 'shutter-click-03', nextVoice: 89.12 },
-  { scene: 'psalm', sfx: 'vintage-camera-flash', nextVoice: 102.01 },
-  { scene: 'creation', sfx: 'nikon-d5100-shutter', nextVoice: 109.09 },
-  { scene: 'analogies', sfx: 'shutter-click-02', nextVoice: 114.09 },
-  { scene: 'universe', sfx: 'shutter-click-04', nextVoice: 123.25 },
-  { scene: 'christ', sfx: 'analog-camera-shutter', nextVoice: 131.77 },
-  { scene: 'colossians', sfx: 'vintage-camera-flash', nextVoice: 144.08 },
+  { scene: 'voices', sfx: 'shutter-click-02', nextVoice: 13.95 },
+  { scene: 'question', sfx: 'shutter-click-04', nextVoice: 31.77 },
+  { scene: 'tetera', sfx: 'analog-camera-shutter', nextVoice: 41.17 },
+  { scene: 'newton', sfx: 'shutter-click-03', nextVoice: 93.98 },
+  { scene: 'psalm', sfx: 'vintage-camera-flash', nextVoice: 109.35 },
+  { scene: 'creation', sfx: 'nikon-d5100-shutter', nextVoice: 117.66 },
+  { scene: 'analogies', sfx: 'shutter-click-02', nextVoice: 123.22 },
+  { scene: 'universe', sfx: 'shutter-click-04', nextVoice: 132.64 },
+  { scene: 'christ', sfx: 'analog-camera-shutter', nextVoice: 141.69 },
+  { scene: 'colossians', sfx: 'vintage-camera-flash', nextVoice: 154.83 },
   { scene: 'logo', sfx: 'nikon-d5100-shutter', nextVoice: null },
 ];

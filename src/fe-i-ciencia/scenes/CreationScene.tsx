@@ -10,7 +10,7 @@ import { UniverseInterior } from '../illustrations/UniverseInterior';
 import { clamp, colors, easeInOut, easeOut, pop, settle } from '../theme';
 
 const at = sceneCues('creation');
-const c = { bible: at(308), admire: at(313), god: at(314), know: at(316), partially: at(318), observing: at(319) };
+const c = { bible: at(307), admire: at(312), god: at(313), know: at(315), partially: at(317), observing: at(318) };
 
 const CX = 540;
 const CY = 930;

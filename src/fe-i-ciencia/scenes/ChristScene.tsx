@@ -11,19 +11,19 @@ import { brandGradient, clamp, colors, easeInOut, easeOut, headingFont, pop, set
 
 const at = sceneCues('christ');
 const c = {
-  admire: at(374),
-  creation: at(376),
-  not: at(377),
-  same: at(380),
-  know: at(382),
-  theirCreator: at(384),
-  therefore: at(387),
-  knowGod: at(391),
-  full: at(396),
-  relation: at(400),
-  intimate: at(401),
-  look: at(406),
-  christ: at(409),
+  admire: at(373),
+  creation: at(375),
+  not: at(376),
+  same: at(379),
+  know: at(381),
+  theirCreator: at(383),
+  therefore: at(386),
+  knowGod: at(390),
+  full: at(395),
+  relation: at(399),
+  intimate: at(400),
+  look: at(405),
+  christ: at(408),
 };
 
 const MAGNIFY = 1.35;

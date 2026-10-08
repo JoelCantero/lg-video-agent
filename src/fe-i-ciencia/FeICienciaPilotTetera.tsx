@@ -6,7 +6,7 @@ import { useBrandFonts } from './fonts';
 import { SCENE_START_FRAME, TETERA_DURATION } from './scenes/tetera/motion';
 import { TeteraScene } from './scenes/tetera/TeteraScene';
 
-// Direction pilot: the teapot excerpt (39.2 s → 88.6 s of the narration) with real audio and captions.
+// Direction pilot: the teapot excerpt (40.33 s → 93.7 s of the narration) with real audio and captions.
 export const FeICienciaPilotTetera: React.FC = () => {
   useBrandFonts();
   const { fps } = useVideoConfig();

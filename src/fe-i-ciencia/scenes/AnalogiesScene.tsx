@@ -10,17 +10,17 @@ import { clamp, colors, easeOut, headingFont, pop } from '../theme';
 
 const at = sceneCues('analogies');
 const c = {
-  com1: at(323),
-  architecture: at(328),
-  more1: at(329),
-  admire: at(331),
-  gaudi: at(332),
-  com2: at(333),
-  engineering: at(338),
-  more2: at(339),
-  appreciate: at(341),
-  genius: at(343),
-  inventor: at(347),
+  com1: at(322),
+  architecture: at(327),
+  more1: at(328),
+  admire: at(330),
+  gaudi: at(331),
+  com2: at(332),
+  engineering: at(337),
+  more2: at(338),
+  appreciate: at(340),
+  genius: at(342),
+  inventor: at(346),
 };
 
 const AuthorCard: React.FC<{ readonly lines: string[]; readonly size: number }> = ({ lines, size }) => (

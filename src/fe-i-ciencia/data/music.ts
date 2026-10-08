@@ -1,10 +1,12 @@
 import { FPS, scenes, toFrame, words } from './timeline';
 
-export const MUSIC_SRC = 'private/music/ornave-lofi-vinyl-teapot-553356.mp3';
+// Copy of ornave-lofi-vinyl-teapot-553356.mp3 lowered by exactly 20 dB, so the per-frame volumes are ten
+// times larger: the renderer rounds volumes to steps of 1/97, which at 0.01-0.03 shifted the music by 2-3 dB.
+export const MUSIC_SRC = 'private/music/ornave-lofi-vinyl-teapot-553356-minus20db.wav';
 
 // Integrated loudness measured with ffmpeg ebur128.
-const MUSIC_LUFS = -15.5;
-const NARRATION_LUFS = -36.7;
+const MUSIC_LUFS = -35.5;
+const NARRATION_LUFS = -35;
 
 // Music level relative to the narration, in LU.
 const UNDER_SPEECH = -16;

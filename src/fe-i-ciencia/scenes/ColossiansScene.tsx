@@ -9,21 +9,21 @@ import { useBrandFonts } from '../fonts';
 import { clamp, pop } from '../theme';
 
 const at = sceneCues('colossians');
-const c = { pageTwo: at(424), reference: at(440) };
+const c = { pageTwo: at(423), reference: at(439) };
 
 // Literal text of Colossians 1:15-16 as supplied in the script (ending with the ellipsis).
 const pageOne: VerseLine[] = [
-  [['Ell', 411], ['és', 412], ['la', 413], ['imatge', 414]],
-  [['del', 415], ['Déu', 416], ['invisible,', 417]],
-  [['el', 418], ['primogènit', 419]],
-  [['de', 420], ['tota', 421], ['la', 422], ['creació,', 423]],
+  [['Ell', 410], ['és', 411], ['la', 412], ['imatge', 413]],
+  [['del', 414], ['Déu', 415], ['invisible,', 416]],
+  [['el', 417], ['primogènit', 418]],
+  [['de', 419], ['tota', 420], ['la', 421], ['creació,', 422]],
 ];
 const pageTwo: VerseLine[] = [
-  [['perquè', 424], ['en', 425], ['ell', 426]],
-  [['foren', 427], ['creades', 428]],
-  [['totes', 429], ['les', 430], ['coses,', 431]],
-  [['les', 432], ['del', 433], ['cel', 434]],
-  [['i', 435], ['les', 436], ['de', 437], ['la', 438], ['terra…', 439]],
+  [['perquè', 423], ['en', 424], ['ell', 425]],
+  [['foren', 426], ['creades', 427]],
+  [['totes', 428], ['les', 429], ['coses,', 430]],
+  [['les', 431], ['del', 432], ['cel', 433]],
+  [['i', 434], ['les', 435], ['de', 436], ['la', 437], ['terra…', 438]],
 ];
 
 export const ColossiansScene: React.FC = () => {

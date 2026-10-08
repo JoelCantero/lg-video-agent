@@ -10,21 +10,21 @@ import { clamp, colors, easeInOut, headingFont, pop, settle } from '../theme';
 
 const at = sceneCues('question');
 const c = {
-  but: at(80),
-  science: at(85),
-  faith: at(87),
-  enemies: at(89),
-  shouldAsk: at(90),
-  is: at(94),
-  the: at(95),
-  scienceWord: at(96),
-  really: at(97),
-  only: at(98),
-  way: at(100),
-  of: at(101),
-  know: at(102),
-  theTruth: at(103),
-  truth: at(104),
+  but: at(79),
+  science: at(84),
+  faith: at(86),
+  enemies: at(88),
+  shouldAsk: at(89),
+  is: at(93),
+  the: at(94),
+  scienceWord: at(95),
+  really: at(96),
+  only: at(97),
+  way: at(99),
+  of: at(100),
+  know: at(101),
+  theTruth: at(102),
+  truth: at(103),
 };
 
 // Left-aligned lines stay over the solid half of the gradient (≥4.5:1 for white text).

@@ -9,16 +9,16 @@ import { useBrandFonts } from '../fonts';
 import { clamp, easeInOut, pop } from '../theme';
 
 const at = sceneCues('psalm');
-const c = { salm: at(285), read: at(288), firmament: at(298) };
+const c = { salm: at(284), read: at(287), firmament: at(297) };
 
 // Literal text of Psalm 19:1 as supplied in the script.
 const lines: VerseLine[] = [
-  [['El', 289], ['cel', 290], ['explica', 291]],
-  [['la', 292], ['glòria', 293], ['de', 294], ['Déu,', 295]],
-  [['i', 296], ['el', 297], ['firmament', 298]],
-  [['declara', 299], ['el', 300], ['que', 301]],
-  [['les', 302], ['seves', 303], ['mans', 304]],
-  [['han', 305], ['creat.', 306]],
+  [['El', 288], ['cel', 289], ['explica', 290]],
+  [['la', 291], ['glòria', 292], ['de', 293], ['Déu,', 294]],
+  [['i', 295], ['el', 296], ['firmament', 297]],
+  [['declara', 298], ['el', 299], ['que', 300]],
+  [['les', 301], ['seves', 302], ['mans', 303]],
+  [['han', 304], ['creat.', 305]],
 ];
 
 export const PsalmScene: React.FC = () => {

@@ -12,25 +12,25 @@ import { clamp, colors, easeInOut, easeOut, headingFont, pop, settle } from '../
 
 const at = sceneCues('newton');
 const c = {
-  isaac: at(240),
-  discover: at(243),
-  law: at(245),
-  gravity: at(248),
-  notThink: at(249),
-  contrary: at(264),
-  contraryWord: at(265),
-  knowledge: at(266),
-  order: at(270),
-  bring: at(276),
-  admire: at(278),
-  more: at(280),
-  theirCreator: at(281),
+  isaac: at(239),
+  discover: at(242),
+  law: at(244),
+  gravity: at(247),
+  notThink: at(248),
+  contrary: at(263),
+  contraryWord: at(264),
+  knowledge: at(265),
+  order: at(269),
+  bring: at(275),
+  admire: at(277),
+  more: at(279),
+  theirCreator: at(280),
 };
 
-// The thought Newton did not have, revealed word by word with the narration (words 252–263).
+// The thought Newton did not have, revealed word by word with the narration (words 251–262).
 const quote: Array<[string, number]> = [
-  ['«Ara', 252], ['que', 253], ['ja', 254], ['sé', 255], ['com', 256], ['funciona', 257],
-  ['la', 258], ['gravetat,', 259], ['ja', 260], ['no', 261], ['necessito', 262], ['Déu»', 263],
+  ['«Ara', 251], ['que', 252], ['ja', 253], ['sé', 254], ['com', 255], ['funciona', 256],
+  ['la', 257], ['gravetat,', 258], ['ja', 259], ['no', 260], ['necessito', 261], ['Déu»', 262],
 ];
 
 const DOTS = new Array(42).fill(true).map((_, i) => {

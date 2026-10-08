@@ -7,7 +7,7 @@ import { useBrandFonts } from '../fonts';
 import { clamp, colors, headingFont, settle } from '../theme';
 
 const at = sceneCues('universe');
-const c = { how: at(350), deeply: at(352), universe: at(355), amazed: at(362) };
+const c = { how: at(349), deeply: at(351), universe: at(354), amazed: at(361) };
 
 const WARP_STARS = new Array(140).fill(true).map((_, i) => ({
   angle: random(`warp-angle-${i}`) * Math.PI * 2,
@@ -15,11 +15,11 @@ const WARP_STARS = new Array(140).fill(true).map((_, i) => ({
   size: 2 + random(`warp-size-${i}`) * 4,
 }));
 
-// Literal end of the sentence, shown instead of captions (words 363–370).
+// Literal end of the sentence, shown instead of captions (words 362–369).
 const closing: Array<{ y: number; size: number; words: Array<[string, number]> }> = [
-  { y: 690, size: 56, words: [['davant', 363]] },
-  { y: 810, size: 100, words: [['la', 364], ['majestuositat', 365]] },
-  { y: 950, size: 72, words: [['i', 366], ['la', 367], ['grandesa', 368], ['de', 369], ['Déu.', 370]] },
+  { y: 690, size: 56, words: [['davant', 362]] },
+  { y: 810, size: 100, words: [['la', 363], ['majestuositat', 364]] },
+  { y: 950, size: 72, words: [['i', 365], ['la', 366], ['grandesa', 367], ['de', 368], ['Déu.', 369]] },
 ];
 
 const CX = 540;

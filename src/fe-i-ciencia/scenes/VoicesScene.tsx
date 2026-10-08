@@ -18,12 +18,12 @@ const c = {
   necessity: at(53),
   god: at(55),
   meaning: at(56),
-  the: at(59),
-  philosopher: at(60),
-  alex: at(61),
-  atheism: at(68),
-  conclusion: at(71),
-  comprehension: at(75),
+  // «el filòsof» is not spoken in this recording: the card enters in the pause before «Alex».
+  the: at(60, -0.45),
+  alex: at(60),
+  atheism: at(67),
+  conclusion: at(70),
+  comprehension: at(74),
 };
 
 const GRID = [-0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75];
@@ -114,7 +114,7 @@ export const VoicesScene: React.FC = () => {
 
       {frame >= c.the ? (
         <Floating x={540} y={366} scale={0.85 + 0.15 * rosenbergIn} opacity={Math.min(1, rosenbergIn * 1.4)} dx={(1 - Math.min(1, rosenbergIn)) * 120}>
-          <NameCard role="Filòsof" name="Alex Rosenberg" nameAt={c.alex} roleAt={c.philosopher} nameSize={80} />
+          <NameCard role="Filòsof" name="Alex Rosenberg" nameAt={c.alex} nameSize={80} />
         </Floating>
       ) : null}
 
